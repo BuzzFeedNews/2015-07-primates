@@ -1,0 +1,273 @@
+[
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Annual Report Fiscal Year to report_year",
+    "oldColumnName": "Annual Report Fiscal Year",
+    "newColumnName": "report_year"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column report_year to fiscal_year",
+    "oldColumnName": "report_year",
+    "newColumnName": "fiscal_year"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Annual Report 7023 Col A to col_a",
+    "oldColumnName": "Annual Report 7023 Col A",
+    "newColumnName": "col_a"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Annual Report 7023 Col B to col_b",
+    "oldColumnName": "Annual Report 7023 Col B",
+    "newColumnName": "col_b"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Annual Report 7023 Col C to col_c",
+    "oldColumnName": "Annual Report 7023 Col C",
+    "newColumnName": "col_c"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Annual Report 7023 Col D to col_d",
+    "oldColumnName": "Annual Report 7023 Col D",
+    "newColumnName": "col_d"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Annual Report 7023 Col E to col_e",
+    "oldColumnName": "Annual Report 7023 Col E",
+    "newColumnName": "col_e"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Annual Report 7023 Col F to col_f",
+    "oldColumnName": "Annual Report 7023 Col F",
+    "newColumnName": "col_f"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Customer Number to cust_num",
+    "oldColumnName": "Customer Number",
+    "newColumnName": "cust_num"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column",
+    "columnName": "Column"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column col_a using expression value.toUppercase()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "col_a",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column col_a",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "col_a",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          " ALL OTHER COVERED SPECIE"
+        ],
+        "to": " ALL OTHER COVERED SPECIES"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column col_a",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "col_a",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GORILLAS"
+        ],
+        "to": "NONHUMAN PRIMATES"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column col_a",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "col_a",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LEMURS"
+        ],
+        "to": "NONHUMAN PRIMATES"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column col_a",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "col_a",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SUMATRAN ORANGUTAN"
+        ],
+        "to": "NONHUMAN PRIMATES"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column fiscal_year using expression value.toString()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "fiscal_year",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column cust_num using expression value.toString()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "cust_num",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column col_a using expression value.trim()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "col_a",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column col_a",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "col_a",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "COMMON MARMOSET"
+        ],
+        "to": "NONHUMAN PRIMATES"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column col_a",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "col_a",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WILD NONHUMAN PRIMATE"
+        ],
+        "to": "NONHUMAN PRIMATES"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column col_a",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "col_a",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "COMMON MARMOSETS"
+        ],
+        "to": "NONHUMAN PRIMATES"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column col_a",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "col_a",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MARMOSET"
+        ],
+        "to": "NONHUMAN PRIMATES"
+      }
+    ]
+  }
+]

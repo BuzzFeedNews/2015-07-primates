@@ -1,0 +1,49 @@
+[
+  {
+    "op": "core/column-rename",
+    "description": "Rename column USDA Certificate Number to cert_num",
+    "oldColumnName": "USDA Certificate Number",
+    "newColumnName": "cert_num"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Legal Name to name",
+    "oldColumnName": "Legal Name",
+    "newColumnName": "name"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Customer Number to cust_num",
+    "oldColumnName": "Customer Number",
+    "newColumnName": "cust_num"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Licensee/Registrant City to city",
+    "oldColumnName": "Licensee/Registrant City",
+    "newColumnName": "city"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Licensee/Registrant Address State to state",
+    "oldColumnName": "Licensee/Registrant Address State",
+    "newColumnName": "state"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column",
+    "columnName": "Column"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column USDA Certificate Current Status to cert_status",
+    "oldColumnName": "USDA Certificate Current Status",
+    "newColumnName": "cert_status"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Doing Business As (Trade Name) to dba",
+    "oldColumnName": "Doing Business As (Trade Name)",
+    "newColumnName": "dba"
+  }
+]
